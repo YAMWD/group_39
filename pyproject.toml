@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "wdps-group-39"
+version = "0.1.0"
+description = ""
+authors = ["GenhaoLi <ligenhao20010916@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "WDPS_group_39", from = ".." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+spacy = "^3.8.2"
+llama-cpp-python = "^0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
