@@ -40,4 +40,5 @@ print(output['choices'])
 NER_model_name = "en_core_web_sm"
 NER = download_and_init_nlp(NER_model_name)
 ents = NER(output['choices'][0]['text']).ents
-print(ents)
+for ent in ents:
+      print(ent.text, ent.label_)
