@@ -23,10 +23,7 @@ def download_and_init_nlp(model_name: str, **kwargs) -> Language:
 
 def get_answer():
     model_path = "models/llama-2-7b.Q4_K_M.gguf"
-
-    # If you want to use larger models...
-    #model_path = "models/llama-2-13b.Q4_K_M.gguf"
-    # All models are available at https://huggingface.co/TheBloke. Make sure you download the ones in the GGUF format
+    # models: https://huggingface.co/TheBloke.
 
     question = "What is the capital of Italy? "
     llm = Llama(model_path=model_path, verbose=False)
@@ -43,12 +40,13 @@ def get_answer():
 def get_NER(text: str):
     # Specify the model name you want to download, e.g., "en_core_web_sm"
     NER_model_name = "en_core_web_sm"
-    NER = download_and_init_nlp(NER_model_name)
+    nlp = download_and_init_nlp(NER_model_name)
     # ents = NER(output['choices'][0]['text']).ents
-    ents = NER(text).ents
+    doc = nlp(text)
+    ents = doc.ents
     return ents
 
-def get_candidates_wikipedia(mention):
+def get_candidates_wikipedia(mention: str):
     url = f"https://en.wikipedia.org/w/api.php"
     params = {
         "action": "query",
@@ -63,5 +61,5 @@ def get_candidates_wikipedia(mention):
     return candidates
 
 if __name__ == "__main__":
-    # ents = get_NER("Tennis champion Emerson was expected to win Wimbledon.")
+    ents = get_NER("Tennis champion Emerson was expected to win Wimbledon.")
     get_candidates_wikipedia("Emerson")
