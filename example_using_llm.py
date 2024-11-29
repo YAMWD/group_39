@@ -1,8 +1,11 @@
+from importlib import import_module
+
+import requests
+
 from llama_cpp import Llama
 import spacy
 from spacy.cli import download
 from spacy.language import Language
-from importlib import import_module
 
 def download_and_init_nlp(model_name: str, **kwargs) -> Language:
     """Load a spaCy model, download it if it has not been installed yet.
@@ -18,27 +21,45 @@ def download_and_init_nlp(model_name: str, **kwargs) -> Language:
 
     return model_module.load(**kwargs)
 
-model_path = "models/llama-2-7b.Q4_K_M.gguf"
+def get_answer():
+    model_path = "models/llama-2-7b.Q4_K_M.gguf"
+    # models: https://huggingface.co/TheBloke.
 
-# If you want to use larger models...
-#model_path = "models/llama-2-13b.Q4_K_M.gguf"
-# All models are available at https://huggingface.co/TheBloke. Make sure you download the ones in the GGUF format
+    question = "What is the capital of Italy? "
+    llm = Llama(model_path=model_path, verbose=False)
+    print("Asking the question \"%s\" to %s (wait, it can take some time...)" % (question, model_path))
+    output = llm(
+          question, # Prompt
+          max_tokens=128, # Generate up to 32 tokens
+          stop=["Q:", "\n"], # Stop generating just before the model would generate a new question
+          echo=True # Echo the prompt back in the output
+    )
+    print("Here is the output")
+    print(output['choices'])
 
-question = "What is the capital of Italy? "
-llm = Llama(model_path=model_path, verbose=False)
-print("Asking the question \"%s\" to %s (wait, it can take some time...)" % (question, model_path))
-output = llm(
-      question, # Prompt
-      max_tokens=128, # Generate up to 32 tokens
-      stop=["Q:", "\n"], # Stop generating just before the model would generate a new question
-      echo=True # Echo the prompt back in the output
-)
-print("Here is the output")
-print(output['choices'])
+def get_NER(text: str):
+    # Specify the model name you want to download, e.g., "en_core_web_sm"
+    NER_model_name = "en_core_web_sm"
+    nlp = download_and_init_nlp(NER_model_name)
+    # ents = NER(output['choices'][0]['text']).ents
+    doc = nlp(text)
+    ents = doc.ents
+    return ents
 
-# Specify the model name you want to download, e.g., "en_core_web_sm"
-NER_model_name = "en_core_web_sm"
-NER = download_and_init_nlp(NER_model_name)
-ents = NER(output['choices'][0]['text']).ents
-for ent in ents:
-      print(ent.text, ent.label_)
+def get_candidates_wikipedia(mention: str):
+    url = f"https://en.wikipedia.org/w/api.php"
+    params = {
+        "action": "query",
+        "list": "search",
+        "srsearch": mention,
+        "format": "json",
+        "srlimit": 5  # Limit the number of candidates
+    }
+    response = requests.get(url, params=params)
+    results = response.json().get("query", {}).get("search", [])
+    candidates = [result["title"] for result in results]
+    return candidates
+
+if __name__ == "__main__":
+    ents = get_NER("Tennis champion Emerson was expected to win Wimbledon.")
+    get_candidates_wikipedia("Emerson")
