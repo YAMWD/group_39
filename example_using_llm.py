@@ -1,44 +1,144 @@
-from llama_cpp import Llama
+import re
+from typing import List, Dict, Tuple
+import numpy as np
 import spacy
-from spacy.cli import download
-from spacy.language import Language
-from importlib import import_module
+import requests
+from bs4 import BeautifulSoup
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
-def download_and_init_nlp(model_name: str, **kwargs) -> Language:
-    """Load a spaCy model, download it if it has not been installed yet.
-    :param model_name: the model name, e.g., en_core_web_sm
-    :param kwargs: options passed to the spaCy loader, such as component exclusion
-    :return: an initialized spaCy Language
-    """
-    try:
-        model_module = import_module(model_name)
-    except ModuleNotFoundError:
-        download(model_name)
-        model_module = import_module(model_name)
+class EntityLinker:
+    def __init__(self):
+        """Initialize the entity linker with required models and tools."""
+        self.nlp = spacy.load("en_core_web_sm")
+        self.vectorizer = CountVectorizer(stop_words='english')
 
-    return model_module.load(**kwargs)
+    def extract_entities(self, text: str) -> List[str]:
+        """Extract named entities using spaCy."""
+        doc = self.nlp(text)
+        entities = []
+        for ent in doc.ents:
+            if ent.label_ in ['ORG', 'PERSON', 'GPE', 'LOC', 'NORP']:
+                entities.append(ent.text)
+        return list(set(entities))
 
-model_path = "models/llama-2-7b.Q4_K_M.gguf"
+    def get_wiki_candidates(self, entity: str, max_results: int = 5) -> List[str]:
+        """Get potential Wikipedia page titles for an entity."""
+        search_url = f"https://en.wikipedia.org/w/api.php"
+        params = {
+            "action": "query",
+            "format": "json",
+            "list": "search",
+            "srsearch": entity,
+            "srlimit": max_results
+        }
+        
+        try:
+            response = requests.get(search_url, params=params)
+            response.raise_for_status()
+            data = response.json()
+            return [result['title'] for result in data['query']['search']]
+        except:
+            return []
 
-# If you want to use larger models...
-#model_path = "models/llama-2-13b.Q4_K_M.gguf"
-# All models are available at https://huggingface.co/TheBloke. Make sure you download the ones in the GGUF format
+    def get_wiki_content(self, title: str) -> str:
+        """Get Wikipedia page content for a given title."""
+        url = f"https://en.wikipedia.org/w/api.php"
+        params = {
+            "action": "query",
+            "format": "json",
+            "titles": title,
+            "prop": "extracts",
+            "exintro": True,
+            "explaintext": True
+        }
+        
+        try:
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()
+            page = next(iter(data['query']['pages'].values()))
+            return page.get('extract', '')
+        except:
+            return ""
 
-question = "What is the capital of Italy? "
-llm = Llama(model_path=model_path, verbose=False)
-print("Asking the question \"%s\" to %s (wait, it can take some time...)" % (question, model_path))
-output = llm(
-      question, # Prompt
-      max_tokens=128, # Generate up to 32 tokens
-      stop=["Q:", "\n"], # Stop generating just before the model would generate a new question
-      echo=True # Echo the prompt back in the output
-)
-print("Here is the output")
-print(output['choices'])
+    def disambiguate_entity(self, entity: str, context: str) -> Tuple[str, str]:
+        """
+        Disambiguate entity using Bag of Words approach.
+        Returns (Wikipedia title, URL)
+        """
+        # Get candidate pages
+        candidates = self.get_wiki_candidates(entity)
+        if not candidates:
+            return "", ""
 
-# Specify the model name you want to download, e.g., "en_core_web_sm"
-NER_model_name = "en_core_web_sm"
-NER = download_and_init_nlp(NER_model_name)
-ents = NER(output['choices'][0]['text']).ents
-for ent in ents:
-      print(ent.text, ent.label_)
+        # Get content for all candidates
+        candidate_contents = [self.get_wiki_content(title) for title in candidates]
+        
+        # Filter out empty contents and their corresponding titles
+        valid_contents = []
+        valid_titles = []
+        for title, content in zip(candidates, candidate_contents):
+            if content.strip():
+                valid_contents.append(content)
+                valid_titles.append(title)
+
+        if not valid_contents:
+            return "", ""
+
+        # Create document matrix including context and candidate contents
+        all_docs = [context] + valid_contents
+        try:
+            X = self.vectorizer.fit_transform(all_docs)
+        except:
+            return "", ""
+
+        # Calculate similarity between context and each candidate
+        similarities = cosine_similarity(X[0:1], X[1:]).flatten()
+        
+        # Get best matching candidate
+        if len(similarities) > 0:
+            best_idx = np.argmax(similarities)
+            best_title = valid_titles[best_idx]
+            url = f"https://en.wikipedia.org/wiki/{best_title.replace(' ', '_')}"
+            return best_title, url
+        
+        return "", ""
+
+    def process_text(self, input_text: str) -> Dict[str, str]:
+        """
+        Main function to process input text.
+        Returns dictionary mapping entities to Wikipedia URLs.
+        """
+        # Extract entities
+        entities = self.extract_entities(input_text)
+        
+        # Disambiguate each entity
+        entity_links = {}
+        for entity in entities:
+            _, url = self.disambiguate_entity(entity, input_text)
+            if url:
+                entity_links[entity] = url
+                
+        return entity_links
+
+def main():
+    """Example usage of the EntityLinker."""
+    # Initialize the entity linker
+    linker = EntityLinker()
+    
+    # Example text from PDF
+    text = """Is Rome the capital of Italy? surely it is but many don't know this fact that Italy was not always called as Italy. 
+    Before Italy came into being in 1861, it had several names including Italian Kingdom, Roman Empire and the Republic of Italy among others. 
+    If we start the chronicle back in time, then Rome was the first name to which Romans were giving credit. 
+    Later this city became known as "Caput Mundi" or the capital of the world..."""
+    
+    # Process the text and get entity links
+    entity_links = linker.process_text(text)
+    
+    # Print results in the format shown in PDF
+    for entity, url in sorted(entity_links.items()):
+        print(f"{entity} ⇒ {url}")
+
+if __name__ == "__main__":
+    main()
