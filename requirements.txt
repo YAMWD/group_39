@@ -1,1 +1,2 @@
-spacy
+spacy==3.8.2
+llama-cpp-python==0.3.2
