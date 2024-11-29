@@ -1,21 +1,80 @@
+from importlib import import_module
 import re
-from typing import List, Dict, Tuple
+
 import numpy as np
 import spacy
+import spacy.cli as spacy_cli
+import spacy.language as spacy_lang
 import requests
 from bs4 import BeautifulSoup
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+def download_and_init_nlp(model_name: str, **kwargs) -> spacy_lang.Language:
+    """Load a spaCy model, download it if it has not been installed yet.
+    :param model_name: the model name, e.g., en_core_web_sm
+    :param kwargs: options passed to the spaCy loader, such as component exclusion
+    :return: an initialized spaCy Language
+    """
+    try:
+        model_module = import_module(model_name)
+    except ModuleNotFoundError:
+        spacy_cli.download(model_name)
+        model_module = import_module(model_name)
+
+    return model_module.load(**kwargs)
+
+
+def get_wiki_candidates(entity: str, max_results: int = 5) -> list[str]:
+    """Get potential Wikipedia page titles for an entity."""
+    search_url = f"https://en.wikipedia.org/w/api.php"
+    params = {
+        "action": "query",
+        "format": "json",
+        "list": "search",
+        "srsearch": entity,
+        "srlimit": max_results
+    }
+
+    try:
+        response = requests.get(search_url, params=params)
+        response.raise_for_status()
+        data = response.json()
+        return [result['title'] for result in data['query']['search']]
+    except requests.RequestException:
+        return []
+
+
+def get_wiki_content(title: str) -> str:
+    """Get Wikipedia page content for a given title."""
+    url = f"https://en.wikipedia.org/w/api.php"
+    params = {
+        "action": "query",
+        "format": "json",
+        "titles": title,
+        "prop": "extracts",
+        "exintro": True,
+        "explaintext": True
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data = response.json()
+        page = next(iter(data['query']['pages'].values()))
+        return page.get('extract', '')
+    except requests.RequestException:
+        return ""
+
 
 class EntityLinker:
     def __init__(self):
         """Initialize the entity linker with required models and tools."""
-        self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = download_and_init_nlp("en_core_web_sm")
         self.vectorizer = CountVectorizer(stop_words='english')
 
-    def extract_entities(self, text: str) -> List[str]:
-        """Extract named entities using spaCy."""
+    def extract_entities(self, text: str) -> list[str]:
+        """Extract named entities from text."""
         doc = self.nlp(text)
         entities = []
         for ent in doc.ents:
@@ -23,58 +82,18 @@ class EntityLinker:
                 entities.append(ent.text)
         return list(set(entities))
 
-    def get_wiki_candidates(self, entity: str, max_results: int = 5) -> List[str]:
-        """Get potential Wikipedia page titles for an entity."""
-        search_url = f"https://en.wikipedia.org/w/api.php"
-        params = {
-            "action": "query",
-            "format": "json",
-            "list": "search",
-            "srsearch": entity,
-            "srlimit": max_results
-        }
-
-        try:
-            response = requests.get(search_url, params=params)
-            response.raise_for_status()
-            data = response.json()
-            return [result['title'] for result in data['query']['search']]
-        except:
-            return []
-
-    def get_wiki_content(self, title: str) -> str:
-        """Get Wikipedia page content for a given title."""
-        url = f"https://en.wikipedia.org/w/api.php"
-        params = {
-            "action": "query",
-            "format": "json",
-            "titles": title,
-            "prop": "extracts",
-            "exintro": True,
-            "explaintext": True
-        }
-
-        try:
-            response = requests.get(url, params=params)
-            response.raise_for_status()
-            data = response.json()
-            page = next(iter(data['query']['pages'].values()))
-            return page.get('extract', '')
-        except:
-            return ""
-
-    def disambiguate_entity(self, entity: str, context: str) -> Tuple[str, str]:
+    def disambiguate_entity(self, entity: str, context: str) -> tuple[str, str]:
         """
         Disambiguate entity using Bag of Words approach.
         Returns (Wikipedia title, URL)
         """
         # Get candidate pages
-        candidates = self.get_wiki_candidates(entity)
+        candidates = get_wiki_candidates(entity)
         if not candidates:
             return "", ""
 
         # Get content for all candidates
-        candidate_contents = [self.get_wiki_content(title) for title in candidates]
+        candidate_contents = [get_wiki_content(title) for title in candidates]
 
         # Filter out empty contents and their corresponding titles
         valid_contents = []
@@ -106,7 +125,7 @@ class EntityLinker:
 
         return "", ""
 
-    def process_text(self, input_text: str) -> Dict[str, str]:
+    def process_text(self, input_text: str) -> dict[str, str]:
         """
         Main function to process input text.
         Returns dictionary mapping entities to Wikipedia URLs.

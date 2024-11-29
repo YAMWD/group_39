@@ -1,0 +1,6 @@
+question-001	What is the capital of Italy?
+question-002	What is the capital of United States?
+question-003	What is the capital of China?
+question-004	What is the capital of Japan?
+question-005	What is the capital of South Korea?
+

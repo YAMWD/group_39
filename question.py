@@ -45,14 +45,14 @@ class Question:
         """
         raw_answer = f"{self.question_id}\tR\"{self.raw_answer}\""
         extracted_answer = f"{self.question_id}\tA\"{self.extracted_answer}\""
-        is_correct = f"{self.question_id}\tC\"{'correct' if self.is_correct else 'incorrect'}\""
+        is_correct = f"{self.question_id}\tC\"{self.is_correct}\""
         entities: list[str] = [f"{self.question_id}\tE\"{entity}\"\t\"{url}\"" for entity, url in self.entities.items()]
         return '\n'.join([raw_answer, extracted_answer, is_correct] + entities)
 
 
 def read_questions(file_path: str) -> list[Question]:
     with open(file_path, 'r') as file:
-        return [Question(line) for line in file.readlines()]
+        return [Question(line) for line in file.readlines() if line.strip()]
 
 def write_output(file_path: str, questions: list[Question]) -> None:
     with open(file_path, 'w') as file:
