@@ -1,3 +1,4 @@
+# train_type_classifier.py
 import numpy as np
 import random
 import logging
@@ -20,7 +21,6 @@ logging.basicConfig(
     level=logging.INFO,
 )
 logger = logging.getLogger(__name__)
-
 
 
 def set_seed(seed=42):
@@ -53,7 +53,6 @@ def train_classifier(input_file, model_output_dir):
     label2id = {"yes_no": 0, "entity": 1}
     id2label = {v: k for k, v in label2id.items()}
 
-
     dataset = load_dataset(
         'csv',
         data_files=input_file,
@@ -71,7 +70,6 @@ def train_classifier(input_file, model_output_dir):
 
     logger.info(f"Training set size: {len(train_dataset)}")
     logger.info(f"Validation set size: {len(val_dataset)}")
-
 
     model_name = "distilbert-base-uncased"
     tokenizer = DistilBertTokenizerFast.from_pretrained(model_name)

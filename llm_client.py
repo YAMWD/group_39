@@ -1,3 +1,4 @@
+# llm_client.py
 from llama_cpp import Llama
 
 model_path = "models/llama-2-7b.Q4_K_M.gguf"

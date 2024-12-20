@@ -2398,3 +2398,303 @@
 2398	What figure of the twentieth century is credited with the development of polio vaccine?	entity
 2399	It possible sound faster in water than air?	yes_no
 2400	Who proposed the general theory of relativity, fundamentally changing our understanding of space-time?	entity
+2401	Is the Moon made of cheese?	yes_no
+2402	Can pigs fly by flapping their ears?	yes_no
+2403	Is water dry?	yes_no
+2404	Does 2+2 equal 5?	yes_no
+2405	Can humans breathe underwater without any equipment?	yes_no
+2406	Is the Earth flat?	yes_no
+2407	Do elephants hatch from eggs?	yes_no
+2408	Is fire cold?	yes_no
+2409	Can humans survive on the surface of the Sun?	yes_no
+2410	Is chocolate poisonous to all life forms on Earth?	yes_no
+2411	Can a normal human run faster than sound?	yes_no
+2412	Does gravity push objects away instead of pulling them in?	yes_no
+2413	Are there 60 hours in a day?	yes_no
+2414	Is ice heavier than lead?	yes_no
+2415	Can fish live permanently on land without adaptation?	yes_no
+2416	Is the Sahara Desert covered in ice year-round?	yes_no
+2417	Does sound travel faster than light in a vacuum?	yes_no
+2418	Can a standard car fly like an airplane?	yes_no
+2419	Is the ocean made entirely of lemonade?	yes_no
+2420	Do humans have wings for flight?	yes_no
+2421	Can you see stars at noon with no special conditions?	yes_no
+2422	Is the Earth’s core made of cotton candy?	yes_no
+2423	Is zero greater than one?	yes_no
+2424	Can whales live in deserts?	yes_no
+2425	Is iron softer than a feather?	yes_no
+2426	Does the internet run on steam power?	yes_no
+2427	Can trees walk?	yes_no
+2428	Is the Eiffel Tower located in Antarctica?	yes_no
+2429	Is a minute longer than an hour?	yes_no
+2430	Are all clouds made of solid rock?	yes_no
+2431	Is fire a type of ice?	yes_no
+2432	Do airplanes swim under the ocean?	yes_no
+2433	Is the Great Wall of China made of marshmallows?	yes_no
+2434	Does one week contain 100 days?	yes_no
+2435	Can a normal human lift a mountain?	yes_no
+2436	Is the Moon larger than the Sun?	yes_no
+2437	Does rain fall upward into the sky?	yes_no
+2438	Are diamonds softer than water?	yes_no
+2439	Can people live without breathing?	yes_no
+2440	Is the color red actually a smell?	yes_no
+2441	Do kangaroos live on the Moon?	yes_no
+2442	Is the Pacific Ocean smaller than a swimming pool?	yes_no
+2443	Can you taste sound with your ears?	yes_no
+2444	Is a horse a type of vegetable?	yes_no
+2445	Does the North Pole have tropical rainforests?	yes_no
+2446	Is a second longer than a year?	yes_no
+2447	Can metal melt at room temperature under normal conditions?	yes_no
+2448	Are stars cooled by ice cubes?	yes_no
+2449	Does chocolate grow on Mars?	yes_no
+2450	Can you write a book using pure thought without any tool or tech?	yes_no
+2451	Is Earth’s gravity repelling objects instead of attracting them?	yes_no
+2452	Do electrons have the size of basketballs?	yes_no
+2453	Is the universe contained in a shoebox under your bed?	yes_no
+2454	Can time run backwards on a normal day?	yes_no
+2455	Is the human body made entirely of metal?	yes_no
+2456	Do bananas bark like dogs?	yes_no
+2457	Is the Atlantic Ocean made of molten lava?	yes_no
+2458	Are skyscrapers typically 2 centimeters tall?	yes_no
+2459	Can you smell colors with a healthy human nose?	yes_no
+2460	Is ice cream naturally hot before freezing?	yes_no
+2461	Do mountains float in mid-air without support?	yes_no
+2462	Are polar bears found naturally in the Sahara Desert?	yes_no
+2463	Does 10 minus 5 equal 20?	yes_no
+2464	Can a standard car tire taste like honey if licked?	yes_no
+2465	Is human blood actually green?	yes_no
+2466	Do cars normally swim like fish?	yes_no
+2467	Are books alive and capable of walking around?	yes_no
+2468	Do apples grow fully cooked apple pies on trees?	yes_no
+2469	Is solid steel lighter than a feather?	yes_no
+2470	Does the Moon emit its own light like the Sun?	yes_no
+2471	Can ordinary humans breathe in outer space unaided?	yes_no
+2472	Is Antarctica a hot tropical island?	yes_no
+2473	Are there 500 days in a standard Earth year?	yes_no
+2474	Can you drink solid rock as a beverage?	yes_no
+2475	Is a piano a type of edible fruit?	yes_no
+2476	Does the Pacific Ocean fit inside a teacup?	yes_no
+2477	Is zero a positive number greater than ten?	yes_no
+2478	Do trees speak English fluently to each other?	yes_no
+2479	Is a whale smaller than a grain of sand?	yes_no
+2480	Can normal household cats recite poetry in human language?	yes_no
+2481	Does chocolate turn into diamonds if you freeze it?	yes_no
+2482	Is the Great Pyramid located on Mars?	yes_no
+2483	Are feathers heavier than lead under normal conditions?	yes_no
+2484	Can normal humans survive without eating or drinking ever?	yes_no
+2485	Is a car engine powered by singing birds?	yes_no
+2486	Does a standard clock run backwards normally?	yes_no
+2487	Can you live forever without aging if you just sleep a lot?	yes_no
+2488	Are deserts composed entirely of chocolate chips?	yes_no
+2489	Is a spoon typically larger than a whale?	yes_no
+2490	Do normal houses float 100 meters above the ground naturally?	yes_no
+2491	Does fire freeze water instead of melting it?	yes_no
+2492	Are human bones made of cotton candy?	yes_no
+2493	Can you hear radio signals directly without a radio receiver?	yes_no
+2494	Is the speed of sound in air faster than the speed of light in vacuum?	yes_no
+2495	Are diamonds edible and taste like strawberries?	yes_no
+2496	Can penguins live in a furnace at high temperatures?	yes_no
+2497	Does paper grow on trees fully formed as sheets?	yes_no
+2498	Is a lake drier than the Sahara Desert?	yes_no
+2499	Do raindrops fall upward into space?	yes_no
+2500	Are polar bears naturally bright pink?	yes_no
+2501	Can a human jump over Mount Everest?	yes_no
+2502	Is ice warmer than boiling water?	yes_no
+2503	Do normal oranges speak French when peeled?	yes_no
+2504	Can music notes physically weigh more than an elephant?	yes_no
+2505	Is Pluto closer to the Sun than Mercury?	yes_no
+2506	Can a fish survive on a hot stove without water?	yes_no
+2507	Is a normal year on Earth exactly 1 day long?	yes_no
+2508	Do flowers sing opera at midnight?	yes_no
+2509	Are shadows made of chocolate syrup?	yes_no
+2510	Does the human eye shoot laser beams normally?	yes_no
+2511	Is a mile shorter than one inch?	yes_no
+2512	Can elephants climb clouds?	yes_no
+2513	Does the sky turn green polka dots at noon every day?	yes_no
+2514	Can you hold the entire ocean in your hand?	yes_no
+2515	Do rocks produce milk when squeezed?	yes_no
+2516	Are all humans born knowing every language?	yes_no
+2517	Is the North Pole hotter than the equator?	yes_no
+2518	Does a standard car tire taste like honey if licked?	yes_no
+2519	Is water heavier than a mountain normally?	yes_no
+2520	Can the Moon produce its own sunlight?	yes_no
+2521	Is iron softer than cotton candy?	yes_no
+2522	Do deserts receive heavy rain every hour?	yes_no
+2523	Are icebergs typically on fire?	yes_no
+2524	Does 100 + 100 equal 1?	yes_no
+2525	Can common houseplants play the violin?	yes_no
+2526	Is Jupiter smaller than a tennis ball?	yes_no
+2527	Do human beings have five hundred arms each?	yes_no
+2528	Is the ocean floor made entirely of gold bars?	yes_no
+2529	Does the Earth revolve around a banana instead of the Sun?	yes_no
+2530	Can a feather crush a steel bar by resting on it?	yes_no
+2531	Are cats natural marathon swimmers?	yes_no
+2532	Is a standard baseball bigger than the Sun?	yes_no
+2533	Do books read themselves?	yes_no
+2534	Is air heavier than solid rock under normal conditions?	yes_no
+2535	Can an adult human grow instantly taller by singing a note?	yes_no
+2536	Are desserts always made of sand?	yes_no
+2537	Is a standard pencil capable of causing earthquakes?	yes_no
+2538	Does the Earth have two suns?	yes_no
+2539	Can fire turn into ice spontaneously?	yes_no
+2540	Is a normal human lifespan over 10,000 years?	yes_no
+2541	Do flowers dance tangos without wind?	yes_no
+2542	Can time be stopped by closing your eyes?	yes_no
+2543	Are stars made of frozen yogurt?	yes_no
+2544	Can you drink lava safely?	yes_no
+2545	Is Mercury colder than Pluto?	yes_no
+2546	Does sand taste like chocolate by default?	yes_no
+2547	Can normal humans lift an entire city block easily?	yes_no
+2548	Is gold lighter than helium gas?	yes_no
+2549	Do dolphins write novels?	yes_no
+2550	Is a rainbow made of solid metal beams?	yes_no
+2551	Can you cook a meal on an ice cube without heat?	yes_no
+2552	Are all stars shaped like perfect cubes?	yes_no
+2553	Does rain fall upward?	yes_no
+2554	Can a normal human survive without oxygen indefinitely?	yes_no
+2555	Are clouds made of cotton candy and edible?	yes_no
+2556	Is iron weaker than a spider’s web?	yes_no
+2557	Do butterflies drive cars?	yes_no
+2558	Is the Sun dimmer than a candle flame?	yes_no
+2559	Can ants grow to the size of elephants naturally?	yes_no
+2560	Are human bones hollow like plastic straws?	yes_no
+2561	Can polar bears breathe underwater like fish?	yes_no
+2562	Does day last forever on Earth without night?	yes_no
+2563	Is a year on Earth shorter than a second?	yes_no
+2564	Can you break diamonds by whispering at them?	yes_no
+2565	Are trees made of metal?	yes_no
+2566	Does the internet run on hamster wheels?	yes_no
+2567	Can lightning be caught in a butterfly net?	yes_no
+2568	Is the Earth’s orbit shaped like a perfect square?	yes_no
+2569	Is the human brain located in the foot?	yes_no
+2570	Do stars cool down when you pour water on them?	yes_no
+2571	Can normal grass roar like a lion?	yes_no
+2572	Does the Moon orbit Mars?	yes_no
+2573	Are all rivers made of molten lava?	yes_no
+2574	Can humans photosynthesize sunlight into sugar in their bodies?	yes_no
+2575	Is Pluto in the same orbit as Jupiter?	yes_no
+2576	Do electric fans heat the room by default?	yes_no
+2577	Can normal humans telepathically communicate with stones?	yes_no
+2578	Is a whale’s cry louder than the speed of light?	yes_no
+2579	Do deserts contain more water than oceans?	yes_no
+2580	Is the Milky Way galaxy the size of a baseball?	yes_no
+2581	Can you read a book by tasting it with your tongue?	yes_no
+2582	Are diamonds softer than butter?	yes_no
+2583	Does 1 equal 1000?	yes_no
+2584	Can fish live on the Sun’s surface?	yes_no
+2585	Is the deepest ocean trench only 1 centimeter deep?	yes_no
+2586	Do mammals lay eggs regularly?	yes_no
+2587	Is sound faster than light in vacuum?	yes_no
+2588	Are mountains made of cotton candy?	yes_no
+2589	Can you survive without ever drinking water or eating food?	yes_no
+2590	Is Earth’s atmosphere composed entirely of mercury vapor?	yes_no
+2591	Do lions typically breathe underwater like fish?	yes_no
+2592	Is the North Pole hotter than the Sahara Desert?	yes_no
+2593	Can a human see microscopic bacteria with naked eye easily?	yes_no
+2594	Do trees grow upside down from the sky downward?	yes_no
+2595	Is ice naturally on fire?	yes_no
+2596	Can you burn steel by whispering to it?	yes_no
+2597	Are all rocks alive and moving around?	yes_no
+2598	Does the Earth have 20 moons visible daily?	yes_no
+2599	Is an elephant smaller than an ant?	yes_no
+2600	Do airplanes swim in the soil?	yes_no
+2601	Is the ocean’s water solid under normal conditions?	yes_no
+2602	Can a human jump to the Moon unaided?	yes_no
+2603	Is a second longer than a year?	yes_no
+2604	Do cats recite Shakespearean plays in English?	yes_no
+2605	Does fire form ice cubes?	yes_no
+2606	Is water typically dry to the touch?	yes_no
+2607	Is Jupiter’s gravity weaker than a feather’s pull?	yes_no
+2608	Do snakes fly naturally like birds?	yes_no
+2609	Is the Earth’s shape a perfect cube?	yes_no
+2610	Are human nails stronger than diamonds?	yes_no
+2611	Can you drink molten lava safely?	yes_no
+2612	Are all fruits made of metal?	yes_no
+2613	Does the Moon produce its own oxygen atmosphere?	yes_no
+2614	Can ants lift entire buildings with ease?	yes_no
+2615	Is the Sun colder than ice?	yes_no
+2616	Do rocks sing lullabies at midnight?	yes_no
+2617	Are deserts constantly flooding with water?	yes_no
+2618	Can an hour contain a million years?	yes_no
+2619	Does the Earth orbit the Moon?	yes_no
+2620	Are all clouds pink polka dots?	yes_no
+2621	Does human blood taste like chocolate naturally?	yes_no
+2622	Is a standard car tire lighter than air?	yes_no
+2623	Do dolphins grow on trees?	yes_no
+2624	Can electricity flow through a vacuum as visible sparks without electrodes?	yes_no
+2625	Are all mountains perfectly flat surfaces?	yes_no
+2626	Does a normal human have 200 eyes?	yes_no
+2627	Is Mercury’s day shorter than one second?	yes_no
+2628	Do whales permanently live on mountaintops?	yes_no
+2629	Is iron softer than cotton?	yes_no
+2630	Can sunlight turn into ice cubes spontaneously?	yes_no
+2631	Are all vegetables living animals?	yes_no
+2632	Does the speed of sound exceed the speed of light normally?	yes_no
+2633	Do fish thrive without water?	yes_no
+2634	Is the entire planet covered in peanut butter?	yes_no
+2635	Can you breathe in outer space without a suit?	yes_no
+2636	Is zero a large positive number?	yes_no
+2637	Are stars dark and cold lumps of charcoal?	yes_no
+2638	Is an apple larger than the Earth?	yes_no
+2639	Do cars normally talk to humans in English?	yes_no
+2640	Is Earth’s atmosphere composed entirely of helium?	yes_no
+2641	Do bricks melt at room temperature?	yes_no
+2642	Are human hair strands thicker than tree trunks?	yes_no
+2643	Can snakes do complex algebra?	yes_no
+2644	Is a diamond softer than a pillow?	yes_no
+2645	Does Earth have no gravity at all?	yes_no
+2646	Are all fruits poisonous to humans?	yes_no
+2647	Can humans survive by eating only rocks?	yes_no
+2648	Is the center of the Earth hollow and filled with candy?	yes_no
+2649	Can you see distant galaxies by closing your eyes tightly?	yes_no
+2650	Do airplanes run on banana fuel as standard?	yes_no
+2651	Is a human lifespan normally millions of years?	yes_no
+2652	Does a vacuum cleaner produce flowers when turned on?	yes_no
+2653	Are raindrops made of molten metal?	yes_no
+2654	Can an icicle burn a hole in steel?	yes_no
+2655	Do jellyfish write poems on sand dunes?	yes_no
+2656	Are deserts full of frozen icebergs normally?	yes_no
+2657	Is the Sun’s surface cool enough to touch safely?	yes_no
+2658	Do all metals float on water like wood?	yes_no
+2659	Are human ears designed to taste music?	yes_no
+2660	Can a turtle outrun a speeding bullet?	yes_no
+2661	Is the Pacific Ocean narrower than a coin?	yes_no
+2662	Do pineapples grow inside volcanoes?	yes_no
+2663	Can normal humans survive without ever sleeping?	yes_no
+2664	Are all stars the size of a baseball?	yes_no
+2665	Is ice naturally on fire?	yes_no
+2666	Does gravity push objects upward?	yes_no
+2667	Can you measure time by smelling flowers accurately?	yes_no
+2668	Are deserts covered in ice cream by default?	yes_no
+2669	Is a standard car tire edible and nutritious?	yes_no
+2670	Does a hairdryer freeze water into ice instantly?	yes_no
+2671	Are humans naturally able to fly without any devices?	yes_no
+2672	Is an ostrich smaller than an ant?	yes_no
+2673	Do clouds form underground?	yes_no
+2674	Can an ordinary plastic spoon cut through diamond easily?	yes_no
+2675	Is snow hot to the touch?	yes_no
+2676	Are human bones made of cotton candy?	yes_no
+2677	Can normal kitchen ovens freeze food into ice instantly?	yes_no
+2678	Is Earth shaped like a perfect pyramid?	yes_no
+2679	Does the human hand have 1000 fingers?	yes_no
+2680	Are all objects invisible?	yes_no
+2681	Is every creature immortal?	yes_no
+2682	Do whales fly in the sky like birds?	yes_no
+2683	Can a stone speak multiple languages?	yes_no
+2684	Is fire a type of cold gas?	yes_no
+2685	Does Earth have no magnetic field at all?	yes_no
+2686	Are diamonds made of milk?	yes_no
+2687	Can you hear planets singing lullabies?	yes_no
+2688	Is water pink under normal conditions?	yes_no
+2689	Do humans live millions of years without aging?	yes_no
+2690	Can a lion breathe underwater like a fish?	yes_no
+2691	Is steel lighter than air?	yes_no
+2692	Are all fruits poisonous?	yes_no
+2693	Do ants read human literature?	yes_no
+2694	Is an hour shorter than a second?	yes_no
+2695	Can normal humans lift a mountain easily?	yes_no
+2696	Do airplanes flap wings to fly like birds?	yes_no
+2697	Are deserts filled with water above mountains?	yes_no
+2698	Is sound faster than light in vacuum?	yes_no
+2699	Do cats typically drive cars to supermarkets?	yes_no
+2700	Are all insects larger than whales?	yes_no

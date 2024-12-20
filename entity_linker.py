@@ -1,11 +1,12 @@
+# entity_linker.py
 from importlib import import_module
 import numpy as np
-import spacy
 import spacy.cli as spacy_cli
 import spacy.language as spacy_lang
 import requests
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
 
 def download_and_init_nlp(model_name: str, **kwargs) -> spacy_lang.Language:
     """

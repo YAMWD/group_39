@@ -1,6 +1,7 @@
+# question_processor.py
 from classifier import QuestionClassifier
 from extract_answer import extract_answer
-from entity_linker import EntityLinker
+from entity_linker2 import EntityLinker
 from llm_client import get_raw_answer
 import logging
 
@@ -20,12 +21,11 @@ class QuestionProcessor:
 
             # Step 2: Get the raw answer from the language model
             question.raw_answer = get_raw_answer(question.text)
+            if not question.raw_answer:
+                question.raw_answer = "No answer generated."
 
-            # Step 3: Perform entity linking (only relevant for "entity" type questions)
-            if question.label == "entity":
-                question.entities = self.entity_linker.process_text(question.raw_answer)
-            else:
-                question.entities = {}
+            # Step 3: Perform entity linking
+            question.entities = self.entity_linker.process_text(question.raw_answer)
 
             # Step 4: Extract the final answer based on the question type
             question.extracted_answer = extract_answer(question)

@@ -132,7 +132,7 @@ def augment_data(input_df, augmenters, tokenizer_fr, model_fr, tokenizer_en, mod
 def main():
     set_seed()
     device = initialize_device()
-    data = load_data('training_input.csv')
+    data = load_data('../training_input.csv')
 
 
     aug_syn = naw.SynonymAug(aug_p=0.3)
@@ -152,7 +152,7 @@ def main():
         tokenizer_en=tokenizer_en,
         model_en=model_en,
         device=device,
-        output_file='question_augmented_format.csv'  # Update to your desired format
+        output_file='../question_augmented_format.csv'  # Update to your desired format
     )
 
 if __name__ == "__main__":

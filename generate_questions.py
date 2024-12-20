@@ -1,3 +1,4 @@
+# generate_questions.py
 from llama_cpp import Llama
 
 def generate_questions(model_path, prompt, output_file, num_questions=10):
