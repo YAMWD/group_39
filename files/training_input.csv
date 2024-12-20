@@ -1,0 +1,600 @@
+question-001	Is Mount Everest truly the highest peak on Earth?	yes_no
+question-002	The capital city of Japan is...	entity
+question-003	Does the Amazon River carry a greater volume of water than any other river?	yes_no
+question-004	If gravity ceased to exist, would objects still fall to the ground?	yes_no
+question-005	Name the inventor who first patented the telephone.	entity
+question-006	Is it possible that the Great Wall of China cannot be seen from space with the naked eye?	yes_no
+question-007	The painter of the Mona Lisa was...	entity
+question-008	Could it be that humans share over 90% of their DNA with chimpanzees?	yes_no
+question-009	Is the speed of light constant in a vacuum?	yes_no
+question-010	Which chemical element has the symbol "Au"?	entity
+question-011	Isn't it true that the Nile is often considered the longest river in the world?	yes_no
+question-012	During World War II, the leader of the Soviet Union was...	entity
+question-013	Does deforestation contribute significantly to climate change?	yes_no
+question-014	If the Earth were twice as far from the Sun, would it still support life as we know it?	yes_no
+question-015	Identify the ancient Greek philosopher who was the teacher of Aristotle.	entity
+question-016	Can we confirm that Tokyo is one of the most populous urban areas globally?	yes_no
+question-017	The largest desert on Earth is...	entity
+question-018	Is the Amazon Rainforest located primarily in Brazil?	yes_no
+question-019	Could it be possible that some planets outside our solar system harbor life?	yes_no
+question-020	Name the author who wrote "Pride and Prejudice."	entity
+question-021	Is Shakespeare credited with writing "Hamlet"?	yes_no
+question-022	List three countries in Europe that do not use the Euro as their primary currency.	entity
+question-023	Does the theory of relativity originate from Albert Einstein?	yes_no
+question-024	If the Internet had never been invented, would global communication remain predominantly local?	yes_no
+question-025	The structure built to protect China’s northern borders centuries ago is called...	entity
+question-026	Is it true that Mars is sometimes referred to as the Red Planet?	yes_no
+question-027	Who developed the vaccine that led to the near-eradication of polio?	entity
+question-028	Could the Industrial Revolution have occurred without the invention of the steam engine?	yes_no
+question-029	Is the Louvre Museum located in Paris, France?	yes_no
+question-030	The process by which plants convert sunlight into chemical energy is known as...	entity
+question-031	Do whales, as mammals, breathe air instead of using gills like fish do?	yes_no
+question-032	Which device, created in the mid-20th century, revolutionized computing by replacing vacuum tubes?	entity
+question-033	Is it commonly accepted that water boils at 100°C under standard atmospheric pressure?	yes_no
+question-034	If no humans had discovered fire, would human civilization have progressed as it did?	yes_no
+question-035	Name the city that hosted the first modern Olympic Games in 1896.	entity
+question-036	Is the Great Barrier Reef threatened by rising ocean temperatures?	yes_no
+question-037	Could one argue that Socrates never wrote any philosophical texts himself?	yes_no
+question-038	The largest ocean on Earth is...	entity
+question-039	Is it generally agreed that the Earth orbits around the Sun, rather than vice versa?	yes_no
+question-040	List two European languages that do not share the Latin alphabet.	entity
+question-041	Does the theory of evolution by natural selection originate from Charles Darwin?	yes_no
+question-042	Assuming the Moon had a breathable atmosphere, would humans survive there without spacesuits?	yes_no
+question-043	Which Renaissance figure is credited with painting "The Last Supper"?	entity
+question-044	Is it true that global warming has been linked to increased greenhouse gas emissions from human activities?	yes_no
+question-045	Could artificial intelligence surpass human intelligence in complex decision-making tasks?	yes_no
+question-046	Identify the chemical element that is essential for breathing and constitutes about 21% of Earth's atmosphere.	entity
+question-047	Is the Taj Mahal located in India?	yes_no
+question-048	If electric cars became the global standard, would carbon emissions from transportation decrease?	yes_no
+question-049	Name the scientist who introduced the concept of gravity after observing a falling apple (according to legend).	entity
+question-050	Isn’t it true that the printing press invention greatly accelerated the spread of knowledge in Europe?	yes_no
+question-051	Isn't it true that the Nile River is considered the longest river on Earth?	yes_no
+question-052	The Carthaginian general who famously crossed the Alps with elephants was...	entity
+question-053	Name three subatomic particles found within an atom’s structure.	entity
+question-054	Which Renaissance master painted the ceiling of the Sistine Chapel in Vatican City?	entity
+question-055	Could it be possible that Mars once harbored liquid water beneath its surface conditions?	yes_no
+question-056	Identify the top five largest countries by land area.	entity
+question-057	The invention that revolutionized the production of books in the 15th century was the...	entity
+question-058	Who composed the opera "La Bohème"?	entity
+question-059	The concept of the Turing machine, central to theoretical computer science, was introduced by...	entity
+question-060	Does gravity cause two masses to attract each other regardless of distance?	yes_no
+question-061	The earliest known civilization in the region of Mesopotamia was the...	entity
+question-062	If the speed of light is constant in all inertial frames, would this imply time dilation at high velocities?	yes_no
+question-063	Name the traditional Japanese robe often worn during cultural festivals.	entity
+question-064	The Inca citadel perched high in the Andes Mountains of Peru is called...	entity
+question-065	Is the chemical symbol for the element gold "Au"?	yes_no
+question-066	During World War II, which British Prime Minister delivered speeches that uplifted public morale?	entity
+question-067	Who is generally regarded as the "father of modern computing"?	entity
+question-068	Assuming a perfect vacuum, does sound fail to propagate through it?	yes_no
+question-069	The ancient Greek philosopher who taught Alexander the Great was...	entity
+question-070	Is Mount Kilimanjaro located on the African continent?	yes_no
+question-071	During the Apollo 11 mission, who was the first person to set foot on the Moon?	entity
+question-072	Which chemical element, possessing the atomic number 1, is the lightest and most abundant in the universe?	entity
+question-073	Could life adapted to extreme conditions exist around hydrothermal vents in Earth’s oceans?	yes_no
+question-074	Name an ancient language that significantly influenced multiple modern European languages.	entity
+question-075	The mausoleum commissioned by Emperor Shah Jahan in India is known as the...	entity
+question-076	If artificial intelligence achieved near-human cognition, could autonomous machines outperform humans in complex tasks?	yes_no
+question-077	Which European city, renowned for its maritime history, is characterized by numerous canals?	entity
+question-078	Is the Great Barrier Reef situated off the coast of Australia?	yes_no
+question-079	The War of 1812 primarily involved armed conflict between the United States and...	entity
+question-080	Who formulated the three laws of motion that underpin classical mechanics?	entity
+question-081	Isn't it true that Machu Picchu exemplifies the sophisticated engineering of the Inca civilization?	yes_no
+question-082	List three instruments commonly featured in a standard symphony orchestra.	entity
+question-083	The Rosetta Stone was crucial in deciphering the written language of...	entity
+question-084	If polar ice caps continue to melt, could global sea levels rise appreciably?	yes_no
+question-085	Does the Amazon rainforest boast greater biodiversity than many other terrestrial ecosystems?	yes_no
+question-086	The primary official language spoken in Brazil is...	entity
+question-087	Who proposed the general theory of relativity, fundamentally altering our understanding of space-time?	entity
+question-088	Is the Leaning Tower of Pisa located in Italy?	yes_no
+question-089	Name the largest hot desert on the planet.	entity
+question-090	Which ancient civilization constructed the Great Pyramids at Giza?	entity
+question-091	Could it be possible that historical migration patterns influenced the distribution of language families?	yes_no
+question-092	The concept of the first programmable computer is often attributed to the work of...	entity
+question-093	When the Industrial Revolution began, which industry first underwent extensive mechanization?	entity
+question-094	Is Jupiter larger than Earth?	yes_no
+question-095	Who is credited with painting the "Mona Lisa"?	entity
+question-096	Is silicon commonly utilized as a semiconductor material in electronics?	yes_no
+question-097	The historical trade route that connected East Asia and Europe is known as the...	entity
+question-098	If photosynthesis ceased globally, would atmospheric oxygen levels eventually diminish?	yes_no
+question-099	Which ocean lies immediately to the east of the African continent?	entity
+question-100	Could it be possible that the advent of the printing press accelerated the Protestant Reformation’s spread?	yes_no
+question-101	Isn't it true that Mount Everest is located in Asia?	yes_no
+question-102	Could it be possible that the Roman Empire influenced languages across Europe?	yes_no
+question-103	Is the speed of light considered a universal constant in physics?	yes_no
+question-104	If no printing press had been invented, would knowledge have spread as quickly in medieval Europe?	yes_no
+question-105	Isn't it true that Beethoven composed nine symphonies?	yes_no
+question-106	Could it be possible that some AI systems outperform humans in certain cognitive tasks?	yes_no
+question-107	Is the Great Barrier Reef situated off the coast of Australia?	yes_no
+question-108	Isn't it true that the Peloponnesian War was fought in ancient Greece?	yes_no
+question-109	Could it be possible that black holes form from collapsed stars?	yes_no
+question-110	Is the Taj Mahal regarded as a UNESCO World Heritage site?	yes_no
+question-111	If ancient philosophers had lacked writing, would their ideas have endured?	yes_no
+question-112	Do polar bears primarily inhabit the Arctic region?	yes_no
+question-113	Isn't it true that Cleopatra was a member of the Ptolemaic Dynasty?	yes_no
+question-114	Does the chemical symbol 'Fe' represent the element iron?	yes_no
+question-115	If we reversed Earth’s rotation, would the Sun still appear to rise in the east?	yes_no
+question-116	Isn't it true that Michelangelo painted the ceiling of the Sistine Chapel?	yes_no
+question-117	Could it be possible that algorithms already shape our daily online interactions?	yes_no
+question-118	Is the Sahara Desert the largest hot desert on Earth?	yes_no
+question-119	Does the concept of zero originate from ancient mathematicians?	yes_no
+question-120	If democracy had not evolved, would monarchies still dominate the modern world?	yes_no
+question-121	Isn't it true that Machu Picchu is located in Peru?	yes_no
+question-122	Could it be possible that electricity existed in a controlled form before the 19th century?	yes_no
+question-123	Is the Amazon River generally considered longer than the Mississippi River?	yes_no
+question-124	If gravity ceased to exist, would objects remain suspended in midair?	yes_no
+question-125	Isn't it true that Pablo Picasso was a pioneering figure in Cubist art?	yes_no
+question-126	Could it be possible that genetic engineering can modify plant traits for better yields?	yes_no
+question-127	Is Rome a city located within modern Italy?	yes_no
+question-128	Isn't it true that Confucius was an influential philosopher in ancient China?	yes_no
+question-129	Do whales communicate using sound waves over long distances?	yes_no
+question-130	If the Earth had no moon, would tidal patterns differ significantly?	yes_no
+question-131	Is the Great Wall of China considered one of the world's longest man-made structures?	yes_no
+question-132	Could it be possible that neural networks mimic some aspects of brain function?	yes_no
+question-133	Isn't it true that the Rosetta Stone helped decipher Egyptian hieroglyphs?	yes_no
+question-134	Does Shakespeare’s ‘Hamlet’ rank among his most famous plays?	yes_no
+question-135	If philosophers never recorded their debates, would we still know their ideas?	yes_no
+question-136	Is Antarctica covered mostly by ice?	yes_no
+question-137	Isn't it true that Isaac Newton formulated the law of universal gravitation?	yes_no
+question-138	Could it be possible that the internet has reshaped global communication more than the telephone?	yes_no
+question-139	Are the Andes Mountains located in South America?	yes_no
+question-140	If ancient trade routes had not existed, would cultural exchange have been slower?	yes_no
+question-141	Isn't it true that Vincent van Gogh was a post-impressionist painter?	yes_no
+question-142	Could it be possible that the transistor was a pivotal invention in modern electronics?	yes_no
+question-143	Is the Gobi Desert located in Asia?	yes_no
+question-144	If the speed of sound doubled, would we notice a significant change in everyday life?	yes_no
+question-145	Isn't it true that Aristotle was a student of Plato?	yes_no
+question-146	Does hydrogen stand as the lightest element on the periodic table?	yes_no
+question-147	If nuclear power never emerged, would fossil fuels have remained predominant for energy?	yes_no
+question-148	Could it be possible that ancient civilizations constructed observatories for astronomical study?	yes_no
+question-149	Isn't it true that the Mona Lisa is displayed in the Louvre Museum?	yes_no
+question-150	Do dolphins exhibit complex social behaviors?	yes_no
+question-151	Name the capital city of Australia.	entity
+question-152	The scientist who developed the theory of relativity was...	entity
+question-153	Identify the empire that built the city of Tenochtitlan.	entity
+question-154	The chemical element with the symbol 'O' is...	entity
+question-155	Which Renaissance artist painted 'The Last Supper'?	entity
+question-156	The philosopher who authored 'The Republic' was...	entity
+question-157	Name a widely used programming language created in the 1990s.	entity
+question-158	The largest planet in our solar system is...	entity
+question-159	Which ancient civilization constructed the pyramids at Giza?	entity
+question-160	The highest waterfall in the world is named...	entity
+question-161	Which author wrote 'One Hundred Years of Solitude'?	entity
+question-162	The process by which plants convert sunlight into chemical energy is called...	entity
+question-163	Name the inventor of the telephone.	entity
+question-164	Which African country is home to the Serengeti National Park?	entity
+question-165	The composer of the 'Moonlight Sonata' was...	entity
+question-166	Which ancient Greek mathematician is known for his theorem about right triangles?	entity
+question-167	The printed characters used to reproduce text and images in a printing press are called...	entity
+question-168	Name the capital city of Japan.	entity
+question-169	Which civilization carved the monumental statues known as Moai on Easter Island?	entity
+question-170	The philosopher who founded Stoicism was...	entity
+question-171	Identify the device that measures atmospheric pressure.	entity
+question-172	Which country is associated with the tradition of Flamenco dancing?	entity
+question-173	The ancient trade network connecting China to the Mediterranean is called the...	entity
+question-174	Name the SI unit of electric current.	entity
+question-175	Which Shakespearean play features the character Prospero?	entity
+question-176	The brightest star visible in Earth's night sky is...	entity
+question-177	Which 20th-century figure is credited with developing the polio vaccine?	entity
+question-178	The first emperor of unified China was...	entity
+question-179	Which ocean lies east of Africa?	entity
+question-180	The philosopher known for the allegory of the cave is...	entity
+question-181	Name the spacecraft that first landed humans on the Moon.	entity
+question-182	Which French painter is famous for the painting 'Impression, Sunrise'?	entity
+question-183	The device used to measure temperature is called a...	entity
+question-184	Which programming paradigm emphasizes objects and classes?	entity
+question-185	The structure in cells that contains genetic material is the...	entity
+question-186	Which historical figure led the Haitian Revolution?	entity
+question-187	The process of splitting atomic nuclei to release energy is known as...	entity
+question-188	Name the philosopher known for the categorical imperative.	entity
+question-189	Which ancient civilization constructed Machu Picchu?	entity
+question-190	The literary character who encounters a white whale named Moby Dick was created by...	entity
+question-191	Which Scandinavian country is associated with the Vikings?	entity
+question-192	The force that opposes motion between two surfaces is called...	entity
+question-193	Name the painter who created 'Girl with a Pearl Earring'.	entity
+question-194	Which chemical element has the atomic number 79?	entity
+question-195	The ancient route used by merchants and travelers between Europe and Asia was called the...	entity
+question-196	Which Italian inventor improved the telescope and supported the heliocentric theory?	entity
+question-197	The process by which green plants release oxygen through pores in their leaves is called...	entity
+question-198	Name the Russian author who wrote 'War and Peace'.	entity
+question-199	Which device can convert mechanical energy into electrical energy?	entity
+question-200	The philosopher who wrote 'Meditations on First Philosophy' was...	entity
+question-201	Is Pluto still classified as a dwarf planet in our solar system?	yes_no
+question-202	The primary language spoken in Canada is...	entity
+question-203	Does photosynthesis occur in both plants and certain bacteria?	yes_no
+question-204	If the Earth's rotation were to slow down, would days become longer?	yes_no
+question-205	Name the scientist who formulated the laws of motion and universal gravitation.	entity
+question-206	Is it possible for a black hole to emit radiation?	yes_no
+question-207	The largest planet in our solar system is...	entity
+question-208	Could renewable energy sources entirely replace fossil fuels in the future?	yes_no
+question-209	Is the Great Pyramid of Giza the oldest of the Seven Wonders of the Ancient World?	yes_no
+question-210	Identify the author of the epic poem "The Odyssey."	entity
+question-211	Does water expand when it freezes, making ice less dense than liquid water?	yes_no
+question-212	The capital city of Egypt is...	entity
+question-213	Is the theory of plate tectonics universally accepted in the scientific community?	yes_no
+question-214	If humans could breathe underwater, would coastal cities become more populated?	yes_no
+question-215	Name the ancient civilization known for constructing Machu Picchu.	entity
+question-216	Is the speed of sound faster than the speed of light?	yes_no
+question-217	The process by which cells divide to form two identical daughter cells is called...	entity
+question-218	Could artificial intelligence eventually surpass human intelligence in all domains?	yes_no
+question-219	Is Mount Kilimanjaro the highest peak in Africa?	yes_no
+question-220	Identify the composer of the "Four Seasons."	entity
+question-221	Does the Earth's magnetic field protect us from solar radiation?	yes_no
+question-222	The largest continent on Earth is...	entity
+question-223	If the Moon were significantly closer to the Earth, would tidal effects be stronger?	yes_no
+question-224	Name the philosopher who wrote "Critique of Pure Reason."	entity
+question-225	Is it true that dolphins are classified as mammals?	yes_no
+question-226	The chemical process by which plants absorb carbon dioxide is known as...	entity
+question-227	Could human colonization of Mars be feasible within the next century?	yes_no
+question-228	Is the Sahara Desert larger than the Arabian Desert?	yes_no
+question-229	Identify the ancient city known for its hanging gardens, one of the Seven Wonders of the Ancient World.	entity
+question-230	Does DNA stand for Deoxyribonucleic Acid?	yes_no
+question-231	The longest river in the world is...	entity
+question-232	Is it possible for sound to travel faster in water than in air?	yes_no
+question-233	Name the inventor of the World Wide Web.	entity
+question-234	Does the ozone layer protect the Earth from harmful ultraviolet radiation?	yes_no
+question-235	If humans had no sense of smell, would it affect their ability to taste food?	yes_no
+question-236	The largest species of shark is...	entity
+question-237	Is it true that the Great Wall of China is visible from space with the naked eye?	yes_no
+question-238	Identify the author of "1984" and "Animal Farm."	entity
+question-239	Does a solar eclipse occur when the Moon passes between the Earth and the Sun?	yes_no
+question-240	The smallest bone in the human body is...	entity
+question-241	Could quantum computing revolutionize data processing in the future?	yes_no
+question-242	Is the Dead Sea the saltiest body of water on Earth?	yes_no
+question-243	Name the artist who painted "Starry Night."	entity
+question-244	Does gravity affect the trajectory of light near massive objects?	yes_no
+question-245	If the Earth's orbit were perfectly circular, would there still be seasons?	yes_no
+question-246	The largest living structure on Earth is...	entity
+question-247	Is it possible for humans to live without a circulatory system?	yes_no
+question-248	Name the first person to walk on the Moon.	entity
+question-249	Does the process of nuclear fusion release more energy than nuclear fission?	yes_no
+question-250	The primary gas found in the Earth's atmosphere is...	entity
+question-251	Can plants communicate with each other through chemical signals?	yes_no
+question-252	Is the Andes Mountain range located in North America?	yes_no
+question-253	Identify the mathematician who is known for his contribution to calculus and analytical geometry.	entity
+question-254	Does the human body contain more than 600 muscles?	yes_no
+question-255	If the Sun were to suddenly disappear, how long would it take for Earth to feel the effects?	yes_no
+question-256	Name the first artificial Earth satellite launched by the Soviet Union.	entity
+question-257	Is it true that honey never spoils and can be preserved indefinitely?	yes_no
+question-258	The process by which water vapor turns into liquid water is called...	entity
+question-259	Could autonomous vehicles reduce traffic accidents caused by human error?	yes_no
+question-260	Is the Mariana Trench the deepest part of the world's oceans?	yes_no
+question-261	Name the author of the play "Romeo and Juliet."	entity
+question-262	Does the greenhouse effect contribute to global warming?	yes_no
+question-263	If bees went extinct, would it significantly impact global agriculture?	yes_no
+question-264	The largest internal organ in the human body is...	entity
+question-265	Is it possible for a solar flare to disrupt electronic communications on Earth?	yes_no
+question-266	Name the ancient civilization that built the pyramids at Teotihuacan.	entity
+question-267	Does the process of mitosis result in two identical daughter cells?	yes_no
+question-268	If the Earth's tilt were to change, would it affect the severity of seasons?	yes_no
+question-269	Identify the scientist who discovered penicillin.	entity
+question-270	Is the Great Barrier Reef composed primarily of coral?	yes_no
+question-271	Name the chemical element with the atomic number 6.	entity
+question-272	Does the theory of relativity include both special and general relativity?	yes_no
+question-273	If the Amazon Rainforest were to be completely deforested, what would be the environmental consequences?	yes_no
+question-274	The capital city of Canada is...	entity
+question-275	Is it true that lightning never strikes the same place twice?	yes_no
+question-276	Name the inventor who developed the first practical telephone.	entity
+question-277	Does the Earth's core consist primarily of iron and nickel?	yes_no
+question-278	If humans could breathe in space without protection, would space travel become significantly easier?	yes_no
+question-279	Identify the philosopher known for his work "Meditations."	entity
+question-280	Is it possible for ice to melt below 0°C under certain pressure conditions?	yes_no
+question-281	Name the planet in our solar system known for its extensive ring system.	entity
+question-282	Does the human brain consume approximately 20% of the body's oxygen?	yes_no
+question-283	If the Moon were to disappear, would it affect the Earth's tides?	yes_no
+question-284	Identify the ancient city-state known for its philosophers and democratic government.	entity
+question-285	Is photosynthesis essential for producing the oxygen we breathe?	yes_no
+question-286	Name the inventor of the light bulb.	entity
+question-287	Does the term "Big Bang" refer to the origin of the universe from an extremely hot and dense state?	yes_no
+question-288	If the Earth's axis were perpendicular to its orbital plane, would there be no seasons?	yes_no
+question-289	Identify the scientist who proposed the three laws of motion.	entity
+question-290	Is it true that penguins are exclusively found in the Southern Hemisphere?	yes_no
+question-291	Name the largest moon of Jupiter.	entity
+question-292	Does the process of evaporation cause cooling of the environment?	yes_no
+question-293	If humans had no need for sleep, how might society and daily routines change?	yes_no
+question-294	Identify the author of "To Kill a Mockingbird."	entity
+question-295	Is it possible for a solar eclipse to occur during a full moon?	yes_no
+question-296	Name the element with the chemical symbol "Na."	entity
+question-297	Does the ozone layer primarily absorb ultraviolet radiation from the Sun?	yes_no
+question-298	If the Earth were closer to the Sun, would it experience more extreme temperatures?	yes_no
+question-299	Identify the ancient civilization known for building the city of Petra.	entity
+question-300	Is it true that sound cannot travel through a vacuum?	yes_no
+question-301	Is the chemical symbol for silver "Ag"?	yes_no
+question-302	Name the largest mammal in the ocean.	entity
+question-303	Does photosynthesis occur in algae?	yes_no
+question-304	If the Earth's atmosphere were thicker, would greenhouse gases have a greater warming effect?	yes_no
+question-305	Identify the author of "The Republic."	entity
+question-306	Is it possible for a comet to collide with Earth?	yes_no
+question-307	The process by which plants lose water through their leaves is called...	entity
+question-308	Could renewable energy sources meet global energy demands in the future?	yes_no
+question-309	Is the Sahara Desert larger than the Arabian Desert?	yes_no
+question-310	Name the inventor of the printing press.	entity
+question-311	Does the human body contain more than 200 bones?	yes_no
+question-312	The capital city of Spain is...	entity
+question-313	Is the theory of evolution supported by scientific evidence?	yes_no
+question-314	If humans could hibernate, would it reduce energy consumption during winter months?	yes_no
+question-315	Name the ancient civilization that built the city of Babylon.	entity
+question-316	Is Mercury the closest planet to the Sun in our solar system?	yes_no
+question-317	The largest organ in the human body is...	entity
+question-318	Could genetic engineering eliminate hereditary diseases?	yes_no
+question-319	Is the Great Barrier Reef home to over 1,500 species of fish?	yes_no
+question-320	Identify the philosopher who wrote "Beyond Good and Evil."	entity
+question-321	Does water vapor contribute to the greenhouse effect?	yes_no
+question-322	The process by which cells create energy in the presence of oxygen is called...	entity
+question-323	Could autonomous drones be used effectively in disaster relief operations?	yes_no
+question-324	Is the Mariana Trench the deepest part of the world's oceans?	yes_no
+question-325	Name the scientist who developed the periodic table of elements.	entity
+question-326	Does the human heart pump approximately 5 liters of blood per minute?	yes_no
+question-327	The capital city of Italy is...	entity
+question-328	Is quantum entanglement a phenomenon where particles remain connected regardless of distance?	yes_no
+question-329	If the Moon were significantly larger, would it affect Earth's tides more dramatically?	yes_no
+question-330	Name the author of "The Iliad."	entity
+question-331	Is it true that sound cannot travel through a vacuum?	yes_no
+question-332	The primary gas found in Earth's atmosphere is...	entity
+question-333	Could artificial intelligence assist in curing complex diseases?	yes_no
+question-334	Is Mount Fuji the highest mountain in Japan?	yes_no
+question-335	Identify the composer of "Symphony No. 5."	entity
+question-336	Does the ozone layer play a role in protecting Earth from ultraviolet radiation?	yes_no
+question-337	The process by which plants absorb water through their roots is called...	entity
+question-338	Could space tourism become a common practice in the next few decades?	yes_no
+question-339	Is the Nile River longer than the Amazon River?	yes_no
+question-340	Name the inventor of the electric light bulb.	entity
+question-341	Does the human brain consist of approximately 86 billion neurons?	yes_no
+question-342	The capital city of Germany is...	entity
+question-343	Is the Big Bang theory the most widely accepted explanation for the origin of the universe?	yes_no
+question-344	If humans could regenerate lost limbs, how would it impact medical science?	yes_no
+question-345	Name the ancient civilization that built the Machu Picchu citadel.	entity
+question-346	Is Venus the hottest planet in our solar system?	yes_no
+question-347	The process by which cells divide to produce gametes is called...	entity
+question-348	Could virtual reality revolutionize education and training?	yes_no
+question-349	Is the Great Wall of China visible from space without aid?	yes_no
+question-350	Identify the philosopher known for the "categorical imperative."	entity
+question-351	Does methane gas contribute to global warming?	yes_no
+question-352	The largest bone in the human body is...	entity
+question-353	Could renewable energy technologies completely replace fossil fuels by 2050?	yes_no
+question-354	Is the Andes Mountain range the longest continental mountain range in the world?	yes_no
+question-355	Name the author of "Moby-Dick."	entity
+question-356	Does the human body use more energy while at rest than during any physical activity?	yes_no
+question-357	The capital city of Australia is...	entity
+question-358	Is the theory of general relativity a part of Einstein's contributions to physics?	yes_no
+question-359	If humans had no sense of sight, how would it affect daily life?	yes_no
+question-360	Name the ancient civilization that established the city of Rome.	entity
+question-361	Is photosynthesis responsible for producing the oxygen in Earth's atmosphere?	yes_no
+question-362	The process by which water changes from liquid to vapor is called...	entity
+question-363	Could renewable energy storage solutions solve the intermittency problem of solar and wind power?	yes_no
+question-364	Is Mars the fourth planet from the Sun in our solar system?	yes_no
+question-365	Identify the scientist who is famous for the law of universal gravitation.	entity
+question-366	Does the human liver perform over 500 vital functions?	yes_no
+question-367	The capital city of Russia is...	entity
+question-368	Is the heliocentric model of the solar system widely accepted in astronomy?	yes_no
+question-369	If the Earth's magnetic field were to weaken significantly, would it affect animal migration patterns?	yes_no
+question-370	Name the author of "Les Misérables."	entity
+question-371	Does carbon dioxide play a significant role in the greenhouse effect?	yes_no
+question-372	The largest artery in the human body is...	entity
+question-373	Could advancements in biotechnology lead to longer human lifespans?	yes_no
+question-374	Is the Himalayas the youngest mountain range on Earth?	yes_no
+question-375	Identify the composer of "The Four Seasons."	entity
+question-376	Does the depletion of the ozone layer increase the risk of skin cancer in humans?	yes_no
+question-377	The process by which plants release oxygen is called...	entity
+question-378	Could artificial intelligence improve disaster prediction and management?	yes_no
+question-379	Is the Atlantic Ocean the second largest ocean on Earth?	yes_no
+question-380	Name the inventor of the airplane.	entity
+question-381	Does the human body have five senses?	yes_no
+question-382	The capital city of Brazil is...	entity
+question-383	Is string theory a leading candidate for a theory of everything in physics?	yes_no
+question-384	If humans could breathe underwater, how would it impact marine exploration?	yes_no
+question-385	Name the ancient civilization that built the pyramids of Giza.	entity
+question-386	Is Saturn known for having the most extensive ring system among planets in our solar system?	yes_no
+question-387	The process by which cells divide to produce two identical daughter cells is called...	entity
+question-388	Could renewable energy adoption significantly reduce global carbon emissions?	yes_no
+question-389	Is the Great Barrier Reef composed mainly of coral polyps?	yes_no
+question-390	Identify the philosopher who wrote "Thus Spoke Zarathustra."	entity
+question-391	Does nitrogen gas make up the majority of Earth's atmosphere?	yes_no
+question-392	The largest muscle in the human body is...	entity
+question-393	Could advancements in nanotechnology lead to breakthroughs in medicine?	yes_no
+question-394	Is the Arctic Ocean the smallest of the world's five major oceans?	yes_no
+question-395	Name the author of "The Catcher in the Rye."	entity
+question-396	Does the process of cellular respiration occur in the mitochondria of cells?	yes_no
+question-397	The capital city of South Korea is...	entity
+question-398	Is the geocentric model of the solar system scientifically accurate?	yes_no
+question-399	If humans could regenerate neurons, how would it affect brain injuries?	yes_no
+question-400	Name the ancient civilization that built the city of Athens.	entity
+question-401	Are polar bears native to the Arctic region?	yes_no
+question-402	Name the largest planet in our solar system.	entity
+question-403	Are there more than 100 elements in the periodic table?	yes_no
+question-404	If the Earth's atmosphere were thinner, would it affect weather patterns?	yes_no
+question-405	Identify the author of "Brave New World."	entity
+question-406	Are diamonds formed under high-pressure conditions deep within the Earth?	yes_no
+question-407	The process by which plants convert carbon dioxide into oxygen is called...	entity
+question-408	Could renewable energy sources eliminate the need for fossil fuels entirely?	yes_no
+question-409	Are camels well-adapted to desert environments?	yes_no
+question-410	Name the inventor of the first successful airplane.	entity
+question-411	Are there more bones in the adult human body than in a newborn?	yes_no
+question-412	The capital city of France is...	entity
+question-413	Are black holes regions of spacetime exhibiting such strong gravitational effects that nothing can escape from inside them?	yes_no
+question-414	If humans could photosynthesize, how would it impact our dietary needs?	yes_no
+question-415	Name the ancient civilization that built the Colosseum in Rome.	entity
+question-416	Are Venus and Mercury the only planets in our solar system without moons?	yes_no
+question-417	The largest organ inside the human body is...	entity
+question-418	Could advancements in biotechnology lead to personalized medicine?	yes_no
+question-419	Are koalas marsupials native to Australia?	yes_no
+question-420	Identify the composer of the opera "The Magic Flute."	entity
+question-421	Are greenhouse gases essential for maintaining Earth's temperature?	yes_no
+question-422	The process by which cells produce energy in the absence of oxygen is called...	entity
+question-423	Could space exploration lead to the discovery of extraterrestrial life?	yes_no
+question-424	Are there active volcanoes on the Moon?	yes_no
+question-425	Name the philosopher who wrote "Being and Time."	entity
+question-426	Are electrons negatively charged particles?	yes_no
+question-427	The largest bone in the human body is...	entity
+question-428	Could artificial intelligence enhance medical diagnostics?	yes_no
+question-429	Are penguins exclusively found in the Southern Hemisphere?	yes_no
+question-430	Name the author of "Crime and Punishment."	entity
+question-431	Are all reptiles cold-blooded?	yes_no
+question-432	If the Earth's rotation sped up, would days become shorter?	yes_no
+question-433	Name the ancient civilization known for creating cuneiform script.	entity
+question-434	Are there more stars in the Milky Way galaxy than grains of sand on all the world's beaches?	yes_no
+question-435	The process by which plants absorb water through their roots is called...	entity
+question-436	Could renewable energy technologies solve the global energy crisis?	yes_no
+question-437	Are there any mammals that lay eggs?	yes_no
+question-438	Identify the scientist who developed the theory of electromagnetism.	entity
+question-439	Are prokaryotic cells simpler in structure compared to eukaryotic cells?	yes_no
+question-440	The capital city of Canada is...	entity
+question-441	Is the Big Bang theory supported by cosmic microwave background radiation evidence?	yes_no
+question-442	If humans had the ability to hibernate, how would it affect our energy consumption?	yes_no
+question-443	Name the author of "War and Peace."	entity
+question-444	Are mitochondria considered the powerhouses of the cell?	yes_no
+question-445	The largest continent on Earth is...	entity
+question-446	Could advancements in nanotechnology lead to breakthroughs in medicine?	yes_no
+question-447	Are there any amphibians that can live entirely on land?	yes_no
+question-448	Identify the philosopher known for the work "Leviathan."	entity
+question-449	Does carbon dioxide play a significant role in the greenhouse effect?	yes_no
+question-450	The process by which plants release oxygen is called...	entity
+question-451	Could artificial intelligence improve efficiency in renewable energy management?	yes_no
+question-452	Are there more species of insects than any other group of animals on Earth?	yes_no
+question-453	Name the inventor of the telephone.	entity
+question-454	Are vitamins organic compounds necessary for various bodily functions?	yes_no
+question-455	The capital city of Italy is...	entity
+question-456	Is the theory of relativity applicable to both macroscopic and microscopic phenomena?	yes_no
+question-457	If humans could regenerate their skin quickly, how would it impact medical treatments?	yes_no
+question-458	Name the ancient civilization that built the Hanging Gardens, one of the Seven Wonders of the Ancient World.	entity
+question-459	Are neutron stars remnants of supernova explosions?	yes_no
+question-460	The process by which cells replicate their DNA is called...	entity
+question-461	Could renewable energy adoption mitigate the effects of climate change?	yes_no
+question-462	Are dolphins considered mammals?	yes_no
+question-463	Identify the composer of "Eine kleine Nachtmusik."	entity
+question-464	Does methane gas contribute to the greenhouse effect more than carbon dioxide?	yes_no
+question-465	The largest artery in the human body is...	entity
+question-466	Could advancements in robotics lead to increased automation in manufacturing?	yes_no
+question-467	Are there any species of birds that are flightless?	yes_no
+question-468	Name the philosopher who authored "The Social Contract."	entity
+question-469	Does water boil at 100°C at standard atmospheric pressure?	yes_no
+question-470	The process by which cells obtain energy from glucose is called...	entity
+question-471	Could artificial intelligence replace human roles in creative industries?	yes_no
+question-472	Are all snakes venomous?	yes_no
+question-473	Identify the author of "The Divine Comedy."	entity
+question-474	Are electrons smaller in mass compared to protons?	yes_no
+question-475	The capital city of Japan is...	entity
+question-476	Is the heliocentric model of the solar system widely accepted today?	yes_no
+question-477	If humans had the ability to breathe underwater, how would it influence marine research?	yes_no
+question-478	Name the ancient civilization that established the city of Athens.	entity
+question-479	Are there more than three types of clouds in meteorology?	yes_no
+question-480	The largest muscle in the human body is...	entity
+question-481	Could advancements in genetic engineering lead to designer organisms?	yes_no
+question-482	Are there any mammals that lay eggs instead of giving birth to live young?	yes_no
+question-483	Name the philosopher known for the work "Critique of Pure Reason."	entity
+question-484	Does carbon monoxide contribute to air pollution?	yes_no
+question-485	The process by which plants absorb sunlight to produce energy is called...	entity
+question-486	Could renewable energy infrastructure create new job opportunities globally?	yes_no
+question-487	Are there any reptiles that can change their skin color?	yes_no
+question-488	Identify the scientist who is famous for the discovery of penicillin.	entity
+question-489	Are mitochondria found in both plant and animal cells?	yes_no
+question-490	The capital city of Australia is...	entity
+question-491	Is the Big Bang theory the only explanation for the origin of the universe?	yes_no
+question-492	If humans could photosynthesize, would it reduce our dependence on food?	yes_no
+question-493	Name the author of "The Great Gatsby."	entity
+question-494	Are vitamins essential for maintaining good health?	yes_no
+question-495	The largest ocean on Earth is...	entity
+question-496	Could advancements in renewable energy technology lead to energy independence for many countries?	yes_no
+question-497	Are there any species of fish that can survive out of water for extended periods?	yes_no
+question-498	Identify the philosopher who wrote "The Prince."	entity
+question-499	Does nitrogen gas make up the majority of Earth's atmosphere?	yes_no
+question-500	The process by which plants convert sunlight into chemical energy is called...	entity
+question-501	Do elephants have the largest brains among land animals?	yes_no
+question-502	Does the Sun emit more energy than all the stars in the Milky Way combined?	yes_no
+question-503	Did Leonardo da Vinci invent the helicopter?	yes_no
+question-504	Can penguins fly despite being birds?	yes_no
+question-505	Could renewable energy sources completely replace fossil fuels in the next century?	yes_no
+question-506	Will artificial intelligence eventually surpass human intelligence in creativity?	yes_no
+question-507	Would eliminating taxes on renewable energy encourage more sustainable practices?	yes_no
+question-508	Should schools incorporate more technology in their curriculums?	yes_no
+question-509	Have humans ever walked on the surface of Mars?	yes_no
+question-510	Has climate change led to more frequent and severe weather events?	yes_no
+question-511	Had Alexander Graham Bell discovered the telephone earlier, would it have impacted communication technology development?	yes_no
+question-512	Am I able to learn a new language within six months with consistent practice?	yes_no
+question-513	May renewable energy technologies become cost-effective enough to be the primary energy source globally?	yes_no
+question-514	Might there be undiscovered species living in the deepest parts of the ocean?	yes_no
+question-515	Must governments implement stricter environmental regulations to combat pollution?	yes_no
+question-516	Shall we consider alternative methods for waste management to reduce landfill usage?	yes_no
+question-517	Do spiders play a significant role in controlling insect populations?	yes_no
+question-518	Does the Great Barrier Reef suffer from coral bleaching due to rising sea temperatures?	yes_no
+question-519	Did the Industrial Revolution begin in the 18th century?	yes_no
+question-520	Can humans survive without water for more than a week?	yes_no
+question-521	Could space tourism become affordable for the average person in the future?	yes_no
+question-522	Will electric vehicles completely replace gasoline-powered cars within the next 50 years?	yes_no
+question-523	Would introducing more green spaces in urban areas improve public health?	yes_no
+question-524	Should governments invest more in renewable energy research and development?	yes_no
+question-525	Have all dinosaurs become extinct?	yes_no
+question-526	Has the internet significantly changed the way we communicate and access information?	yes_no
+question-527	Had the Titanic not sunk, would transatlantic travel have developed differently?	yes_no
+question-528	Am I capable of mastering complex mathematical concepts with dedication?	yes_no
+question-529	May genetic engineering lead to the eradication of hereditary diseases?	yes_no
+question-530	Might there be parallel universes existing alongside our own?	yes_no
+question-531	Must we rely on fossil fuels to sustain modern civilization?	yes_no
+question-532	Shall we adopt more sustainable agricultural practices to ensure food security?	yes_no
+question-533	Do bats use echolocation to navigate and find food?	yes_no
+question-534	Does photosynthesis occur in all green plants?	yes_no
+question-535	Did Isaac Newton develop the laws of motion independently of Galileo?	yes_no
+question-536	Can some species of jellyfish live indefinitely through a process called transdifferentiation?	yes_no
+question-537	Could virtual reality replace traditional classroom learning methods?	yes_no
+question-538	Will advancements in biotechnology eliminate the need for organ transplants?	yes_no
+question-539	Would reducing meat consumption significantly impact global carbon emissions?	yes_no
+question-540	Should governments prioritize funding for space exploration over other scientific endeavors?	yes_no
+question-541	Have all species of tigers been classified and documented by scientists?	yes_no
+question-542	Has human activity contributed to the acceleration of climate change?	yes_no
+question-543	Had Nikola Tesla focused solely on electrical engineering, would his contributions to technology have been different?	yes_no
+question-544	Am I able to contribute to environmental conservation efforts through daily actions?	yes_no
+question-545	May renewable energy adoption lead to economic growth and job creation?	yes_no
+question-546	Might advancements in medicine eradicate certain types of cancer?	yes_no
+question-547	Must society change to adapt to the increasing presence of artificial intelligence?	yes_no
+question-548	Shall we implement more stringent measures to protect endangered species?	yes_no
+question-549	Do honeybees play a crucial role in pollinating crops and maintaining biodiversity?	yes_no
+question-550	Does the Earth's core consist primarily of solid iron and nickel?	yes_no
+question-551	Did the ancient Egyptians use papyrus as a writing material?	yes_no
+question-552	Can some species of lizards regenerate their tails after losing them?	yes_no
+question-553	Could autonomous robots perform complex surgical procedures with higher precision than humans?	yes_no
+question-554	Will the melting of polar ice caps lead to significant sea-level rise?	yes_no
+question-555	Would adopting a plant-based diet reduce the environmental footprint of individuals?	yes_no
+question-556	Should educational institutions integrate more STEM (Science, Technology, Engineering, Mathematics) programs?	yes_no
+question-557	Have scientists discovered evidence of life on other planets within our galaxy?	yes_no
+question-558	Has the invention of the smartphone transformed modern communication?	yes_no
+question-559	Had Johannes Gutenberg not invented the printing press, would information dissemination have been slower?	yes_no
+question-560	Am I able to improve my physical fitness through regular exercise and a balanced diet?	yes_no
+question-561	May renewable energy sources become the dominant form of energy by the end of the 21st century?	yes_no
+question-562	Might climate change lead to the extinction of certain plant and animal species?	yes_no
+question-563	Must we transition to sustainable energy sources to ensure the planet's future?	yes_no
+question-564	Shall we promote more research into renewable energy technologies to combat climate change?	yes_no
+question-565	Do camels store water in their humps?	yes_no
+question-566	Does the Great Barrier Reef face threats from ocean acidification?	yes_no
+question-567	Did the Renaissance period significantly influence art and science?	yes_no
+question-568	Can humans live on Mars without technological assistance?	yes_no
+question-569	Could advancements in genetic therapy cure genetic disorders?	yes_no
+question-570	Are there any mammals that lay eggs instead of giving birth to live young?	yes_no
+question-571	Name the author of "Fahrenheit 451."	entity
+question-572	Does the ozone layer help protect Earth from harmful ultraviolet rays?	yes_no
+question-573	The process by which cells convert glucose and oxygen into energy is called...	entity
+question-574	Could artificial intelligence systems develop consciousness in the future?	yes_no
+question-575	Are there any species of birds that are flightless?	yes_no
+question-576	Identify the philosopher known for the work "Being and Nothingness."	entity
+question-577	Does carbon dioxide play a critical role in photosynthesis?	yes_no
+question-578	The largest artery in the human body is...	entity
+question-579	Could advancements in renewable energy storage solve the intermittency issues of solar and wind power?	yes_no
+question-580	Are all sharks dangerous to humans?	yes_no
+question-581	Name the author of "The Brothers Karamazov."	entity
+question-582	Does the greenhouse effect contribute to global warming?	yes_no
+question-583	The process by which plants absorb water through their roots is called...	entity
+question-584	Could space mining become a viable industry in the future?	yes_no
+question-585	Are there any mammals that can fly?	yes_no
+question-586	Identify the scientist who discovered the law of universal gravitation.	entity
+question-587	Does the human body contain more than 100 trillion cells?	yes_no
+question-588	The capital city of India is...	entity
+question-589	Is the multiverse theory a scientifically validated concept?	yes_no
+question-590	If humans could regenerate their organs, how would it impact organ transplantation?	yes_no
+question-591	Name the ancient civilization known for building the pyramids in Egypt.	entity
+question-592	Are neutron stars formed from the remnants of supernova explosions?	yes_no
+question-593	The process by which cells divide to produce two identical daughter cells is called...	entity
+question-594	Could artificial intelligence improve efficiency in renewable energy systems?	yes_no
+question-595	Are there any species of amphibians that can survive in arid environments?	yes_no
+question-596	Identify the philosopher who authored "The Prince."	entity
+question-597	Does methane gas have a higher global warming potential than carbon dioxide?	yes_no
+question-598	The largest organ in the human body is...	entity
+question-599	Could advancements in renewable energy technology eliminate energy poverty in developing countries?	yes_no
+question-600	Are all reptiles cold-blooded animals?	yes_no
