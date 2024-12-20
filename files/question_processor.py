@@ -1,7 +1,7 @@
 # question_processor.py
 from classifier import QuestionClassifier
 from extract_answer import extract_answer
-from entity_linker2 import EntityLinker
+from entity_linker import EntityLinker
 from llm_client import get_raw_answer
 import logging
 

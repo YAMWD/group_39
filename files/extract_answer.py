@@ -8,7 +8,7 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification, pipelin
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from entity_linker2 import get_wiki_content
+from entity_linker import get_wiki_content
 
 # Define keywords for "Yes" and "No"
 YES_KEYWORDS = ["yes", "yeah", "yep", "of course", "definitely", "sure", "absolutely", "certainly"]
