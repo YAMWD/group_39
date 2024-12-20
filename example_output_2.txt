@@ -1,0 +1,5 @@
+question-001	Is Managua the capital of Nicaragua?	yes_no	2. Managua is the capital of Nicaragua.	{'Managua': 'https://en.wikipedia.org/wiki/Managua', 'Nicaragua': 'https://en.wikipedia.org/wiki/Nicaragua'}	Yes
+question-002	Question: Is it true that that China is the country with most people in the world? Answer: 	entity	43.5% of the total population	{}	No entity found
+question-003	The largest company in the world by revenue is Apple	entity	1. Wal-Mart Stores, Inc.	{'Wal-Mart Stores': 'https://en.wikipedia.org/wiki/List_of_assets_owned_by_Walmart'}	Wal-Mart Stores
+question-004	Question: Who is the director of Pulp Fiction? Answer: 	entity	No answer generated.	{}	No entity found
+question-005	Question: Is it true that the monarch of England is also the monarch of Canada? Answer: 	entity	It is true that the monarch of England is also the monarch of Canada, but the	{'England': 'https://en.wikipedia.org/wiki/Church_of_England', 'Canada': 'https://en.wikipedia.org/wiki/Provinces_and_territories_of_Canada'}	Canada

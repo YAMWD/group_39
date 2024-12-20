@@ -14,6 +14,7 @@ from transformers import (
 )
 from torch.utils.data import Dataset
 
+
 def set_seed(seed=42):
     random.seed(seed)
     np.random.seed(seed)
@@ -23,20 +24,8 @@ def set_seed(seed=42):
 
 
 class YesNoDataset(Dataset):
-    """
-    A custom PyTorch Dataset for Yes/No/Uncertain classification.
-    """
 
     def __init__(self, texts, labels, tokenizer, max_length=128):
-        """
-        Initializes the dataset with texts and labels.
-
-        Parameters:
-        - texts (list): List of text samples.
-        - labels (list): Corresponding list of label IDs.
-        - tokenizer (transformers.PreTrainedTokenizer): Tokenizer to process the texts.
-        - max_length (int): Maximum sequence length for tokenization.
-        """
         self.texts = texts
         self.labels = labels
         self.tokenizer = tokenizer
@@ -47,15 +36,6 @@ class YesNoDataset(Dataset):
         return len(self.texts)
 
     def __getitem__(self, idx):
-        """
-        Retrieves the tokenized text and label for a given index.
-
-        Parameters:
-        - idx (int): Index of the sample to retrieve.
-
-        Returns:
-        - dict: Dictionary containing input IDs, attention masks, and labels.
-        """
         encoding = self.tokenizer(
             self.texts[idx],
             truncation=True,
@@ -69,15 +49,6 @@ class YesNoDataset(Dataset):
 
 
 def compute_metrics(pred):
-    """
-    Computes evaluation metrics.
-
-    Parameters:
-    - pred (transformers.EvalPrediction): Object containing predictions and label IDs.
-
-    Returns:
-    - dict: Dictionary containing accuracy, precision, recall, and F1 score.
-    """
     labels = pred.label_ids
     preds = np.argmax(pred.predictions, axis=1)
     precision, recall, f1, _ = precision_recall_fscore_support(
@@ -93,39 +64,31 @@ def compute_metrics(pred):
 
 
 def main():
-    """Main function to train the Yes/No/Uncertain classifier."""
+    """Main function to train the Yes/No classifier."""
     set_seed()
 
     # Define the path to your dataset
-    input_file = 'yesno_dataset_format.csv'  # Replace with your actual file path
+    input_file = 'yesno_dataset_format.csv'  # Use the cleaned dataset
 
     # Define valid labels and their corresponding IDs
-    label2id = {'No': 0, 'Uncertain': 1, 'Yes': 2}
+    label2id = {'No': 0, 'Yes': 1}  # Removed 'Uncertain'
     id2label = {v: k for k, v in label2id.items()}
 
-    try:
-        # Attempt to read the CSV file using multiple spaces as the delimiter
-        data = pd.read_csv(
-            input_file,
-            sep='\s{2,}',  # Regex for two or more spaces
-            engine='python',
-            header=None,
-            names=['serial', 'question', 'label']
-        )
-        print(f"Successfully loaded {len(data)} samples from '{input_file}'.")
-    except pd.errors.ParserError as e:
-        print(f"Error reading the CSV file: {e}")
-        return
+    # Load the cleaned dataset
+    data = pd.read_csv(
+        input_file,
+        sep='\t',  # Tab-separated cleaned dataset
+        header=None,
+        names=['serial', 'question', 'label']
+    )
+    print(f"Successfully loaded {len(data)} samples from '{input_file}'.")
 
-    # Map textual labels to numerical IDs
+    # Map textual labels to numeric IDs
     data['label_id'] = data['label'].map(label2id)
 
     # Drop any rows with missing labels
     data = data.dropna(subset=['label_id'])
-    print(f"After dropping missing labels, {len(data)} samples remain.")
-
-    # Convert label IDs to integers
-    data['label_id'] = data['label_id'].astype(int)
+    data['label_id'] = data['label_id'].astype(int)  # 强制转换为整数
 
     # Extract texts and labels
     texts = data['question'].tolist()
@@ -151,7 +114,7 @@ def main():
     # Initialize the model for sequence classification
     model = DistilBertForSequenceClassification.from_pretrained(
         'distilbert-base-uncased',
-        num_labels=3,
+        num_labels=2,  # Adjusted to 2 classes
         id2label=id2label,
         label2id=label2id
     )
